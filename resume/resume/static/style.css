@@ -147,10 +147,10 @@ section .men .img .active {
 .contentBx .links {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-.contentBx .links img {
-    width: 56px;
-    height: 56px;
+.contentBx .links i {
+    color: #fff;
 
 }
