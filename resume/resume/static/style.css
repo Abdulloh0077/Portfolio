@@ -11,7 +11,7 @@ section {
     padding: 0 100px;
     display: flex;
     align-items: center;
-    background: linear-gradient(45deg ,#9c27b0 , #31d5eb);
+    background: linear-gradient(45deg, #9c27b0, #31d5eb);
 }
 
 section::before {
@@ -27,7 +27,7 @@ section::before {
     transition: 1s;
 }
 
-.active::before{
+.active::before {
     background-color: #1f2739;
     box-shadow: 0 0 0 1200px #1ede1e;
 }
@@ -72,7 +72,7 @@ header .logo {
     background-size: 25px !important;
 }
 
-section .content{
+section .content {
     position: relative;
     z-index: 2;
     width: 100%;
@@ -80,59 +80,77 @@ section .content{
     justify-content: flex-start;
     align-items: center;
     transition: 0.5s;
-} 
+}
 
-section .content .contentBx{
+section .content .contentBx {
     position: relative;
     max-width: 600px;
 }
 
-section .content .contentBx h4{
+section .content .contentBx h4 {
     font-weight: 600;
     color: #1ede1e;
     font-size: 2em;
     letter-spacing: 2px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
-section .content .contentBx .h2{
+section .content .contentBx .h2 {
     font-size: 4em;
     line-height: 1em;
     color: #fff;
 }
 
-section .content .contentBx .h3{
+section .content .contentBx .h3 {
     font-weight: 300;
     color: #fff;
     font-size: 3em;
     line-height: 1.5em;
 }
 
-section .content .contentBx .p{
+section .content .contentBx .p {
     font-size: 1em;
     color: #fff;
     margin: 10px 0 20px;
     font-weight: 300;
 }
 
-section .men{
-    position: relative;
+section .men {
+    position: absolute;
     z-index: 2;
-    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
+    width: 500px;
+    height: 500px;
+    display: block;
+    border-radius: 50%;
+    background: rgb(251, 250, 250);
+    right: 100px;
+    transition: 1s;
+    overflow: hidden;
+    box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.1);
+
 }
 
-section .men img{
-    position: relative;
-    width: 300px;
-    height: auto;
-    left: 180px;
+section .men img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-section .men .img .active{
+section .men .img .active {
     position: relative;
     right: 180px;
+}
+
+.contentBx .links {
+    display: flex;
+    align-items: center;
+}
+
+.contentBx .links img {
+    width: 56px;
+    height: 56px;
+
 }

@@ -21,34 +21,40 @@
                 <h4>Hello</h4>
                 <h2 class="h2">I'm Abdulloh</h2>
                 <h3 class="h3">Developer</h3>
-                <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
 
-Aspernatur debitis sapiente quas vero quisquam odit corporis accusamus aut facere, architecto minus voluptatem saepe obcaecati doloremque magnam aliquam mollitia ipsum corporis. Distinctio maxime ut veniam et ab saepe alias enim libero?</p> 
+                    Aspernatur debitis sapiente quas vero quisquam odit corporis accusamus aut facere, architecto minus
+                    voluptatem saepe obcaecati doloremque magnam aliquam mollitia ipsum corporis. Distinctio maxime ut
+                    veniam et ab saepe alias enim libero?</p>
+                <div class="links">
+                    <img src="{% static 'instagram.jpg' %}" alt="#">
+                    <img src="{% static 'youtube.jpg' %}" alt="#">
+                    <img src="{% static 'facebook.jpg' %}" alt="#">
+                    <img src="{% static 'telegram.jpg' %}" alt="#">
+                </div>
             </div>
+
         </div>
         <div class="men">
             <img class="img" src="{% static 'men.jpg' %}" alt="#">
         </div>
-        <footer>
-            <div class="links">
-                <img src="{% static 'instagram.jpg' %}" alt="#">
-                <img src="{% static 'youtube.jpg' %}" alt="#">
-                <img src="{% static 'facebook.jpg' %}" alt="#">
-                <img src="{% static 'telegram.jpg' %}" alt="#">
-            </div>
-        </footer>
+
     </section>
-    
+
     <script>
-        const toggle=document.querySelector('.toggle');
-        const banner=document.querySelector('.banner');
-        const men=document.querySelector('.img')
-        toggle.onclick = function(){
+        const toggle = document.querySelector('.toggle');
+        const banner = document.querySelector('.banner');
+        const men = document.querySelector('.img')
+        toggle.onclick = function () {
             toggle.classList.toggle('active');
             banner.classList.toggle('active');
             men.classList.toggle('active');
         }
-    
+
     </script>
 
 </body>
