@@ -4,6 +4,58 @@
     box-sizing: border-box;
 }
 
+.sidebar{
+    display: none;
+    position: absolute;
+    width: 80px;
+    height: 100vh;
+    background-color: #1ede1e;
+    transition: 0.6s;
+    overflow: hidden;
+}
+
+.sidebar.active{
+    transition: 1s;
+    width: 300px;
+    display: block;
+}
+
+.sidebar ul{
+    position: relative;
+    top: 180px;
+    height: 100vh;
+}
+.sidebar ul li{
+    position: relative;
+    list-style: none;
+}
+
+.sidebar ul li a{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar ul li a .text{
+    position: relative;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #fff;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.menuToggle{
+    position: absolute;
+    top: 20px;
+
+}
+
 section {
     position: relative;
     width: 100%;
@@ -53,23 +105,52 @@ header .logo {
     transition: 0.5s;
 }
 
-.header .toggle {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background-image: url(../static/menu5.png);
-    color: #fbf9f9;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30px;
-    cursor: pointer;
+header .logo.active{
+    display: none;
 }
 
-.header .toggle .active {
-    background-image: url(../static/close3.png) !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-size: 25px !important;
+.header .toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    z-index: 1000px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .toggle::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    transform: translateY(-9px);
+    transition: 0.5s;
+    box-shadow: 0 9px 0 #fff;
+}
+
+.header .toggle::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    transform: translateY(9px);
+    transition: 0.5s;
+}
+
+.header .toggle.active::before{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 0 #fff;
+}
+
+.header .toggle.active::after{
+    transform: translateY(0px) rotate(-45deg);
 }
 
 section .content {
@@ -80,6 +161,10 @@ section .content {
     justify-content: flex-start;
     align-items: center;
     transition: 0.5s;
+}
+
+section .content.active{
+    display: none;
 }
 
 section .content .contentBx {
@@ -130,7 +215,7 @@ section .men {
     transition: 1s;
     overflow: hidden;
     box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.1);
-
+    
 }
 
 section .men img {
@@ -139,18 +224,20 @@ section .men img {
     object-fit: cover;
 }
 
-section .men .img .active {
-    position: relative;
-    right: 180px;
-}
 
-.contentBx .links {
+
+section .contentBx .links {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.contentBx .links i {
+section .contentBx .links i {
     color: #fff;
+    cursor: pointer;
+}
 
+section .contentBx .links i:hover{
+    color: #c6bebe;
+    cursor: pointer;
 }

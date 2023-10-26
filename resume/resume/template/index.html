@@ -12,7 +12,32 @@
 </head>
 
 <body>
+    
     <section class="banner">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="text">Home</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">Portfolio</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">Skills</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">Contact</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
         <header class="header">
             <a href="#" class="logo">PORTFOLIO.</a>
             <div class="toggle"></div>
@@ -32,10 +57,14 @@
                     voluptatem saepe obcaecati doloremque magnam aliquam mollitia ipsum corporis. Distinctio maxime ut
                     veniam et ab saepe alias enim libero?</p>
                 <div class="links">
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-telegram"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-facebook"></i>
+
+                    
+                    <a href="https://instagram.com/asqarov2725/"><i class="fab fa-instagram"></i></a>
+                    
+                    <a href="https://telegram.com/"><i class="fab fa-telegram"></i></a>
+
+                    <a href="https://instagram.com/asqarov2725/"><i class="fab fa-facebook"></i></a>
+                    </i>
                 </div>
             </div>
 
@@ -47,13 +76,17 @@
     </section>
 
     <script>
+        const content=document.querySelector('.content');
+        const logo=document.querySelector('.logo');
         const toggle = document.querySelector('.toggle');
+        const sidebar=document.querySelector('.sidebar')
         const banner = document.querySelector('.banner');
-        const men = document.querySelector('.img')
         toggle.onclick = function () {
+            content.classList.toggle('active');
+            logo.classList.toggle('active');
             toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
             banner.classList.toggle('active');
-            men.classList.toggle('active');
         }
 
     </script>
