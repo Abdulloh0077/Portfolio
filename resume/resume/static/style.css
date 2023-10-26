@@ -115,4 +115,19 @@ section .content .contentBx .p{
     font-weight: 300;
 }
 
+section .men{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
 
+section .men img{
+    position: relative;
+    width: 300px;
+    height: auto;
+    left: 180px;
+}
