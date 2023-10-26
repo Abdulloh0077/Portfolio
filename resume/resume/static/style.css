@@ -131,3 +131,8 @@ section .men img{
     height: auto;
     left: 180px;
 }
+
+section .men .img .active{
+    position: relative;
+    right: 180px;
+}

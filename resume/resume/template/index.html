@@ -27,16 +27,26 @@ Aspernatur debitis sapiente quas vero quisquam odit corporis accusamus aut facer
             </div>
         </div>
         <div class="men">
-            <img src="{% static 'men.jpg' %}" alt="#">
+            <img class="img" src="{% static 'men.jpg' %}" alt="#">
         </div>
+        <footer>
+            <div class="links">
+                <img src="{% static 'instagram.jpg' %}" alt="#">
+                <img src="{% static 'youtube.jpg' %}" alt="#">
+                <img src="{% static 'facebook.jpg' %}" alt="#">
+                <img src="{% static 'telegram.jpg' %}" alt="#">
+            </div>
+        </footer>
     </section>
     
     <script>
         const toggle=document.querySelector('.toggle');
         const banner=document.querySelector('.banner');
+        const men=document.querySelector('.img')
         toggle.onclick = function(){
             toggle.classList.toggle('active');
             banner.classList.toggle('active');
+            men.classList.toggle('active');
         }
     
     </script>
