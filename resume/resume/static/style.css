@@ -9,7 +9,7 @@
     position: absolute;
     width: 80px;
     height: 100vh;
-    background-color: #1ede1e;
+    background-color: transparent;
     transition: 0.6s;
     overflow: hidden;
 }
@@ -22,7 +22,7 @@
 
 .sidebar ul{
     position: relative;
-    top: 180px;
+    top: 150px;
     height: 100vh;
 }
 .sidebar ul li{
@@ -39,7 +39,7 @@
 
 .sidebar ul li a .text{
     position: relative;
-    height: 70px;
+    height: 100px;
     display: flex;
     align-items: center;
     font-size: 1em;
@@ -48,6 +48,13 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: 0.5s;
+}
+
+.sidebar ul li a .text:hover{
+    transition: all 1s;
+    color: rgb(75, 99, 207);
+    border-radius: 7px;
+    padding: 5px;
 }
 
 .menuToggle{
@@ -80,7 +87,6 @@ section::before {
 }
 
 .active::before {
-    background-color: #1f2739;
     box-shadow: 0 0 0 1200px #1ede1e;
 }
 
