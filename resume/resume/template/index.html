@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    
+
     <section class="banner">
         <div class="sidebar">
             <ul>
@@ -22,7 +22,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="portfolio">
                         <div class="text">Portfolio</div>
                     </a>
                 </li>
@@ -37,6 +37,7 @@
                     </a>
                 </li>
             </ul>
+            
         </div>
         <header class="header">
             <a href="#" class="logo">PORTFOLIO.</a>
@@ -46,7 +47,13 @@
             <div class="contentBx">
                 <h4>Hello</h4>
                 <h2 class="h2">I'm Abdulloh</h2>
-                <h3 class="h3">Developer</h3>
+                <h3 class="h3">Developer,Coder</h3>
+                <!-- <span class="text-slider-items">
+                    A computer Science portal for geeks,
+                    A place to practice code
+                </span> -->
+
+                <strong class="text-slider"></strong>
                 <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
@@ -58,14 +65,15 @@
                     veniam et ab saepe alias enim libero?</p>
                 <div class="links">
 
-                    
+
                     <a href="https://instagram.com/asqarov2725/"><i class="fab fa-instagram"></i></a>
-                    
+
                     <a href="https://telegram.com/"><i class="fab fa-telegram"></i></a>
 
                     <a href="https://instagram.com/asqarov2725/"><i class="fab fa-facebook"></i></a>
                     </i>
                 </div>
+
             </div>
 
         </div>
@@ -74,12 +82,18 @@
         </div>
 
     </section>
+<!-- 
+    <script src="./typed.js-master/lib/typed.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/
+   jquery/3.5.1/jquery.min.js"> -->
+{% comment %} </script> {% endcomment %}
 
     <script>
-        const content=document.querySelector('.content');
-        const logo=document.querySelector('.logo');
+        const content = document.querySelector('.content');
+        const logo = document.querySelector('.logo');
         const toggle = document.querySelector('.toggle');
-        const sidebar=document.querySelector('.sidebar')
+        const sidebar = document.querySelector('.sidebar')
         const banner = document.querySelector('.banner');
         toggle.onclick = function () {
             content.classList.toggle('active');
@@ -88,6 +102,20 @@
             sidebar.classList.toggle('active');
             banner.classList.toggle('active');
         }
+
+        // if ($(".text-slider").length == 1) {
+
+        //     var typed_strings =
+        //         $(".text-slider-items").text();
+
+        //     var typed = new Typed(".text-slider", {
+        //         strings: typed_strings.split(", "),
+        //         typeSpeed: 50,
+        //         loop: true,
+        //         backDelay: 900,
+        //         backSpeed: 30,
+        //     });
+        // }
 
     </script>
 

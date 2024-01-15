@@ -19,8 +19,13 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from resume.views import *
+from django.urls import path, include
+from django.contrib.auth.models import User
+from rest_framework import routers, serializers, viewsets
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('',HomePage.as_view(),name='home'),
-]
+    path('api-auth/', include('rest_framework.urls')),
+    path("portfolio/", PortfolioPage.as_view(), name="portfolio"),
+    path('admin/', admin.site.urls),
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
